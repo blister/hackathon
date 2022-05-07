@@ -1,0 +1,29 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Open Source Hackathon Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blister/hackathon.git"
+  },
+  "author": "Eric^2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blister/hackathon/issues"
+  },
+  "homepage": "https://github.com/blister/hackathon#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

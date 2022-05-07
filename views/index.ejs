@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hackathon Concept Prototype</title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<h2>Hackathon Prototype</h2>
+
+	<form method="get" action="/">
+		<input type="radio" id="coding" name="user_type" value="coding" <%- user_type == 'coding' ? 'checked' : '' %>>
+		<label for="coding">Programmer</label>
+		<input type="radio" id="hardware" name="user_type" value="hardware" <%- user_type == 'hardware' ? 'checked' : '' %>>
+		<label for="hardware">Hardware Dev</label>
+		<input type="radio" id="design" name="user_type" value="design" <%- user_type == 'design' ? 'checked' : '' %>>
+		<label for="design">Designer</label>
+
+		<input type="submit" value="Get cards!">
+	</form>
+
+	<br><br><br>
+
+	<div id="cards">
+		<div id="category" class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front category">
+				</div>
+				<div class="flip-card-back">
+					<%= category.title %>
+				</div>
+			</div>
+		</div>
+
+		<div id="feature" class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front feature">
+				</div>
+				<div class="flip-card-back">
+					<%= feature.title %>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="user" class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front user">
+				</div>
+				<div class="flip-card-back">
+					<%= user.title %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
