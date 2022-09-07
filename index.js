@@ -85,7 +85,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(process.env.HTTP_PORT || 3000);
+app.listen(process.env.PORT || 3000);
 
 function getRandom(arr, user_type) {
     let val = arr[ Math.floor(Math.random() * arr.length) ];
